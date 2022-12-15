@@ -16,6 +16,7 @@
 		A80D394F294A530900BE3266 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D394E294A530900BE3266 /* StarterView.swift */; };
 		B8623016294B43C60020E28B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8623015294B43C60020E28B /* ButtonView.swift */; };
 		B862301E294B8D3A0020E28B /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862301D294B8D3A0020E28B /* AppStorageManager.swift */; };
+		B8623020294BD0ED0020E28B /* UserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862301F294BD0ED0020E28B /* UserManage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A80D394E294A530900BE3266 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		B8623015294B43C60020E28B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B862301D294B8D3A0020E28B /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
+		B862301F294BD0ED0020E28B /* UserManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				A80D394E294A530900BE3266 /* StarterView.swift */,
-				A80D393C294A077F00BE3266 /* ContentView.swift */,
 				A80D394A294A4F3400BE3266 /* RegisterView.swift */,
+				A80D393C294A077F00BE3266 /* ContentView.swift */,
 				B8623014294B43970020E28B /* Components */,
 			);
 			path = Views;
@@ -102,6 +104,7 @@
 			children = (
 				A80D3948294A47C100BE3266 /* TimeCounter.swift */,
 				B862301D294B8D3A0020E28B /* AppStorageManager.swift */,
+				B862301F294BD0ED0020E28B /* UserManage.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A80D3949294A47C100BE3266 /* TimeCounter.swift in Sources */,
 				A80D394B294A4F3400BE3266 /* RegisterView.swift in Sources */,
 				A80D394F294A530900BE3266 /* StarterView.swift in Sources */,
+				B8623020294BD0ED0020E28B /* UserManage.swift in Sources */,
 				A80D393D294A077F00BE3266 /* ContentView.swift in Sources */,
 				A80D393B294A077F00BE3266 /* StateAndDataFlowApp.swift in Sources */,
 				B862301E294B8D3A0020E28B /* AppStorageManager.swift in Sources */,

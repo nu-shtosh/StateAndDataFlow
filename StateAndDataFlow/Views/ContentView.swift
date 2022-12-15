@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var timer = TimeCounter()
+    @EnvironmentObject private var userManager: UserManager
     @EnvironmentObject private var appStorageManager: AppStorageManager
     
     var body: some View {
         VStack {
-            Text("Hi, \(appStorageManager.userName)")
+            Text("Hi, \(userManager.name)")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Text(timer.counter.formatted())
@@ -29,12 +30,14 @@ struct ContentView: View {
 
             ButtonView(title: "Log Out", color: .blue, action: logOut)
         }
-    
     }
 
     private func logOut() {
+        userManager.isRegister = false
+        userManager.name = ""
         appStorageManager.userIsRegister = false
         appStorageManager.userName = ""
+
     }
 }
 

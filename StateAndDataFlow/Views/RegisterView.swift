@@ -9,8 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @StateObject private var appStorageManager = AppStorageManager()
-
-    @State private var isContentShow = false
+    @EnvironmentObject private var userManager: UserManager
 
     var body: some View {
         VStack {
@@ -21,7 +20,7 @@ struct RegisterView: View {
                     .foregroundColor(appStorageManager.userName.count > 2 ? Color.green : Color.red)
                     .padding(.trailing)
             }
-            Button(action: { appStorageManager.userIsRegister = true } ) {
+            Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
@@ -29,7 +28,15 @@ struct RegisterView: View {
             }
             .disabled(appStorageManager.userName.count > 2 ? false : true)
         }
-        .fullScreenCover(isPresented: $isContentShow) { }
+    }
+
+    private func registerUser() {
+        if !appStorageManager.userName.isEmpty {
+            userManager.name = appStorageManager.userName
+            userManager.isRegister = true
+            appStorageManager.userIsRegister = true
+
+        }
     }
 }
 
