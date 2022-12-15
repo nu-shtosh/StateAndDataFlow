@@ -37,7 +37,6 @@ struct ContentView: View {
         userManager.name = ""
         appStorageManager.userIsRegister = false
         appStorageManager.userName = ""
-
     }
 }
 

@@ -27,6 +27,9 @@ struct RegisterView: View {
                 }
             }
             .disabled(appStorageManager.userName.count > 2 ? false : true)
+        }.onAppear() {
+            userManager.isRegister = appStorageManager.userIsRegister
+            userManager.name = appStorageManager.userName
         }
     }
 
